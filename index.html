@@ -7,9 +7,10 @@
 	  
     <a-scene>
 	    <a-assets>
-		    <a-asset-item id="teapot" src="http://alextsai.me/t3/teapot.glb"></a-asset-item>
-		</a-assets>
-    	<a-entity gltf-model="#teapot" rotation="0 45 45" scale="2 2 2"></a-entity>
+    		<a-asset-item id="teapot-obj" src="http://alextsai.me/t3/teapot.obj"></a-asset-item>
+    		<a-asset-item id="teapot-mtl" src="http://alextsai.me/t3/teapot.mtl"></a-asset-item>
+  		</a-assets>
+  		<a-entity obj-model="obj: #teapot-obj; mtl: #teapot-mtl"></a-entity>
     </a-scene>
   <body>
 </html>
